@@ -26,6 +26,7 @@
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
+            overflow: hidden;
         }
 
         .container:hover {
@@ -59,6 +60,21 @@
             line-height: 1.6;
         }
 
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+
         .contact-info {
             display: flex;
             justify-content: space-between;
@@ -73,6 +89,10 @@
         a:hover {
             color: #0056b3;
         }
+        
+        .contact-info span {
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -84,6 +104,7 @@
 
     <div class="container">
         <h2>YEHYA EL AKOUM</h2>
+        <img class="profile-pic" src="profile-pic.jpg" alt="Profile Picture">
         <p>Solution Expert at Lexzur Company. I work onsite at Dubai Police. I am a results-oriented graduate in Computer Communication Engineering with a strong academic background and hands-on experience in the telecommunications industry. I have demonstrated skills in cabling and jointing, Wi-Fi technologies, VoIP, and smart city solutions.
 
             I hold certifications in Cisco networking and have a proven track record of successful volunteer work as a paramedic. I am proficient in programming languages such as Python, Java, and C/C++, and I have a solid understanding of MATLAB and networking tools. As a collaborative team player, I possess excellent analytical and problem-solving skills.
@@ -94,20 +115,17 @@
         <p>Email: 
             <span class="contact-info">
                 <a href="mailto:yehyaakoum11@gmail.com">yehyaakoum11@gmail.com</a>
+                <span>/</span>
                 <a href="mailto:yehya.akum@lexzur.com">yehya.akum@lexzur.com</a>
             </span>
             <br>
             Phone: 
             <span class="contact-info">
                 +9710557920401
+                <span>/</span>
                 +96103225214
             </span>
         </p>
-    </div>
-
-</body>
-
-</html>
     </div>
 
 </body>
