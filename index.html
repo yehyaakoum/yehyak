@@ -45,7 +45,6 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
             overflow: hidden;
-            position: relative; /* Added position relative */
         }
 
         .container:hover {
@@ -81,41 +80,10 @@
             object-fit: cover;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
-            position: relative;
         }
 
         .profile-pic:hover {
             transform: scale(1.1);
-        }
-
-        .profile-pic:hover .click-overlay {
-            opacity: 1;
-        }
-
-        .click-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .click-button {
-            color: #fff;
-            background-color: #007bff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .click-button:hover {
-            background-color: #0056b3;
         }
 
         .contact-info {
@@ -136,15 +104,6 @@
         .contact-info span {
             display: inline-block;
         }
-
-        .click-button-img {
-            position: absolute;
-            top: 200px; /* Adjust as needed */
-            right: 20px; /* Adjust as needed */
-            width: 50px; /* Adjust as needed */
-            height: 50px; /* Adjust as needed */
-            cursor: pointer;
-        }
     </style>
 </head>
 
@@ -154,15 +113,9 @@
 
     <div class="container">
         <h2>YEHYA EL AKOUM</h2>
-        <div class="profile-pic">
-            <a href="https://www.linkedin.com/in/yehya-el-akoum-455948137/" target="_blank">
-                <img src="1730782096030-removebg-preview.png" alt="Profile Picture">
-                <div class="click-overlay">
-                    <a href="#" class="click-button">Click Me!</a>
-                </div>
-            </a>
-        </div>
-        <img src="small_image.png" class="Hand-cursor-icon-with-blue-click-button.png" alt="Click Button Image">
+        <a href="https://www.linkedin.com/in/yehya-el-akoum-455948137/" target="_blank">
+            <img class="profile-pic" src="1730782096030-removebg-preview.png" alt="Profile Picture">
+        </a>
         <p>Solution Expert at Lexzur Company. I work onsite at Dubai Police. I am a results-oriented graduate in Computer Communication Engineering with a strong academic background and hands-on experience in the telecommunications industry. I have demonstrated skills in cabling and jointing, Wi-Fi technologies, VoIP, and smart city solutions.
 
             I hold certifications in Cisco networking and have a proven track record of successful volunteer work as a paramedic. I am proficient in programming languages such as Python, Java, and C/C++, and I have a solid understanding of MATLAB and networking tools. As a collaborative team player, I possess excellent analytical and problem-solving skills.
