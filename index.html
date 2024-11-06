@@ -25,10 +25,7 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             margin: 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
+            padding: 0;
             background-color: #007bff;
             color: #fff;
             padding: 10px 0;
@@ -38,7 +35,7 @@
 
         .container {
             max-width: 800px;
-            margin: 70px auto 20px; /* Adjusted margin to avoid overlapping with the fixed title */
+            margin: 70px auto 20px;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
@@ -86,6 +83,16 @@
             transform: scale(1.1);
         }
 
+        .small-img {
+            display: block;
+            margin: 10px auto;
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
         .contact-info {
             display: block;
             margin-bottom: 20px;
@@ -116,6 +123,7 @@
         <a href="https://www.linkedin.com/in/yehya-el-akoum-455948137/" target="_blank">
             <img class="profile-pic" src="1730782096030-removebg-preview.png" alt="Profile Picture">
         </a>
+        <img class="small-img" src="small-image.jpg" alt="Small Image"> <!-- Small image added here -->
         <p>Solution Expert at Lexzur Company. I work onsite at Dubai Police. I am a results-oriented graduate in Computer Communication Engineering with a strong academic background and hands-on experience in the telecommunications industry. I have demonstrated skills in cabling and jointing, Wi-Fi technologies, VoIP, and smart city solutions.
 
             I hold certifications in Cisco networking and have a proven track record of successful volunteer work as a paramedic. I am proficient in programming languages such as Python, Java, and C/C++, and I have a solid understanding of MATLAB and networking tools. As a collaborative team player, I possess excellent analytical and problem-solving skills.
