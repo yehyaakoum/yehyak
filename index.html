@@ -122,81 +122,6 @@
         .contact-info span {
             display: inline-block;
         }
-        function sendEmail(event) {
-        event.preventDefault(); // Prevent form from reloading the page
-
-        let formData = {
-            from_name: document.getElementById("name").value,
-            from_email: document.getElementById("email").value,
-            message: document.getElementById("message").value
-        };
-
-        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
-            .then(function(response) {
-                alert("Message sent successfully!");
-                document.getElementById("contact-form").reset();
-            }, function(error) {
-                alert("Failed to send message. Please try again.");
-                console.log(error);
-            });
-    }
-</script>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        color: #333;
-        overflow-x: hidden;
-    }
-    video {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    }
-    .container {
-        max-width: 800px;
-        margin: 120px auto 20px;
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
-        color: #007bff;
-        font-size: 24px;
-        border-bottom: 2px solid #007bff;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-    }
-    .contact-form {
-        background: #f8f8f8;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .contact-form input, .contact-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin: 5px 0;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
-    .contact-form button {
-        background: #007bff;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-    }
-    .contact-form button:hover {
-        background: #0056b3;
-    }
     </style>
 </head>
 
@@ -339,15 +264,14 @@ Telecommunication Intern <br><a href="https://www.ogero.gov.lb/">Ogero</a>, Beir
         <source src="vecteezy_a-woman-eye-with-connect-technology-data_47880106.mp4">
     </video>
     
-<div class="container">
-    <h2>Contact Me</h2>
-    <form id="contact-form" class="contact-form" onsubmit="sendEmail(event)">
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</div>
+    <div class="container">
+        <h2>Email me</h2>
+        <form class="contact-form" action="mailto:yehyaakoum11@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </body>
 </html>
 
